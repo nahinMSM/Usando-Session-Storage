@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Session - Page 2</title>
+</head>
+
+<body>
+    <div>
+        <h2>Page 2</h2>
+    </div>
+    <div>
+        <input type="button" id="inputButton2" value="Exibir o valor da session storage"><br><br>
+        <input type="text" id="viewSessionSotorage"></input>
+    </div>
+    <script>
+        const btn2 = document.querySelector("#inputButton2");
+        btn2.addEventListener("click", function () {
+            let paragrafo = document.querySelector("#viewSessionSotorage");
+            paragrafo.textContent =  localStorage.getItem('valueText');
+        })
+    </script>
+</body>
+
+</html>
